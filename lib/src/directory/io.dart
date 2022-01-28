@@ -113,7 +113,7 @@ class DirUtils implements LocalStorageImpl {
 
   Future<Directory> _getDocumentDir() async {
     try {
-      return await getApplicationDocumentsDirectory();
+      return await getApplicationSupportDirectory();
     } catch (err) {
       throw PlatformNotSupportedError();
     }
